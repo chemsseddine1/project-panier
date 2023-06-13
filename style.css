@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body{
+    font-family: 'Roboto' , sans-serif;
+}
+* {
+margin: 0;
+padding: 0;
+margin-top:0px;
+}
+i {
+margin-right:10px;
+}
+
+input:focus,
+button:focus,
+.form-control:focus{
+outline: none;
+box-shadow:none;
+}
+.form-control:disabled, .form-control[readonly]{   /* Style des champs de saisie désactivés ou en lecture seule */
+
+background-color:#fff;
+}
+#title {                      /* Mise en forme du titre */
+
+
+margin-top:-40px;
+margin-bottom:-70px;
+padding-bottom:-30px;
+}
+
+.table tr,                 /* Alignement vertical des lignes et des cellules du tableau */
+.table tr td{
+vertical-align:middle;
+}
+.button-container{          /* Mise en forme du conteneur des boutons avec un affichage flex et un alignement vertical centré */
+display:flex;
+align-items:center;
+}
+.button-container .form-control{   /* Mise en forme des champs de saisie dans le conteneur des boutons */
+  max-width:70px;
+  text-align:center;
+  display:inline-block;
+  margin: -20px 0px;
+  }
+#myTable .form-control{   /* Mise en forme des champs de saisie spécifiques à la table */
+width:auto;
+display:inline-block;
+}
+.cart-qty-plus,    /* Mise en forme des boutons d'ajout et de suppression de quantité */
+.cart-qty-minus{
+     width:30px;
+	 height:30px;
+	 background-color:#ffb;
+	 border:1px solid #ced4da;
+	 border-radius: .25rem;
+}
+.cart-qty-plus:hover, /* Mise en forme des boutons d'ajout et de suppression de quantité au survol */
+.cart-qty-minus:hover{
+      background-color:#5161ce;
+	  color:#fff;
+}
+.img-prdct{   /* Mise en forme du conteneur de l'image du produit */
+     width:70px;
+	 height:70px;
+	 background-color:#5161ce;
+	 border-radius: 4px;
+}
+.img-prdct img{
+     width: 100%;
+	 margin-top:-20px;
+}
+
+.amount {
+color:red;
+font-weight: bold;
+}
+
+.like:hover{	
+   filter: sepia(0%) hue-rotate(0deg) saturate(90000%); /* Modifie la couleur en rouge en survol avec effet filtre */
+  }
+  
+  .selected {                               /* Mise en forme des éléments sélectionnés avec un effet visuel */
+    filter: sepia(0%) hue-rotate(0deg) saturate(90000%); 
+}
+  
+  
